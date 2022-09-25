@@ -1,3 +1,4 @@
+import math
 import random
 
 print("ランダムな体温のデータを作成しましょう")
@@ -15,7 +16,7 @@ numberOfData = input()
 
 try:
     for i in range(int(numberOfData)):
-        print(random.uniform(float(minBodyTemp), float(maxBodyTemp)))
+        print("{:.1f}".format(random.uniform(float(minBodyTemp), float(maxBodyTemp))))
 
 except:
     print("型が違います")
